@@ -458,8 +458,7 @@ height=158 id="Picture 29"
 src="Auto%20Insurance%20Risk%20Classification%20and%20Claim%20Prediction_files/image001.jpg"
 alt="Policy transaction schema with subtype automobile dimension table from Ralph Kimball The Data Warehouse Toolkit 3rd edition"></span></a></p>
 
-<p class=MsoCaption>Figure 1 Policy transaction schema with subtype automobile 
-from Ralph Kimball The Data Warehouse Toolkit 3rd edition</p>
+<p class=MsoCaption>Figure 1 Policy transaction schema with subtype automobile from Ralph Kimball The Data Warehouse Toolkit 3rd edition</p>
 
 <p class=MsoNormal>On the other hand, in ongoing monthly or yearly reports only
 a current state of a policy at the end of a month is taken into account. For
@@ -471,7 +470,7 @@ term state works for this purpose.</p>
 
 <p class=MsoNormal>In a real word, the process is even more complex because it
 is not just one object (vehicle) which can be in different states but 2
-independent objects – vehicle and driver. They can change their states
+independent objects - vehicle and driver. They can change their states
 independently.</p>
 
 <p class=MsoNormal>Each of the objects has plenty (20+) attributes and
@@ -481,7 +480,7 @@ Properties, Homeowners, Dwelling) where the level of details for insured items
 even more deep (200+ attributes).</p>
 
 <p class=MsoNormal>Creating 2 traditional SCD dimensions type 2 for DIM_VEHICLE
-and DIM_DRIVER is not a big deal.  There are few issues however in our source
+and DIM_DRIVER is not a big deal. There are few issues however in our source
 systems: missing unique entities IDs, change dates and historical information. Some
 of this missing info can be added into the source data base from XML original
 data source and adjusting current parsing procedure but it takes significant
@@ -516,7 +515,7 @@ general table without specific to risk items attributes. </p>
 type 2 DIM_VEHICLE and DIM_DRIVER not to the fact tables directly but rather to
 DIM_COVEREDRISK as a bridge table. The insured items dimensions from other line
 of business also can be joined to fact tables via DIM_COVEREDRISK in the same
-way.  There are few type fields in the dimension and we can describe what
+way. There are few type fields in the dimension and we can describe what
 exactly dimension is joined in a row.</p>
 
 <p class=MsoNormal>To make life easier I added several more columns in
@@ -570,7 +569,7 @@ terms because in the approach described above the age (driver, license,
 vehicle) is frozen? On the other hand, the samples will be dependable on each
 other.</p>
 
-<p class=MsoNormal>Try to add in the data set non-primary drivers – vehicle
+<p class=MsoNormal>Try to add in the data set non-primary drivers - vehicle
 combinations plus vehicles without drivers with all other drivers combinations</p>
 
 <p class=MsoNormal>The claim rate may change to ~3%.</p>
@@ -772,7 +771,7 @@ own several tests it looks like one-hot encoding is not needed for tree-based
 algorithms.</p>
 
 <p class=MsoNormal>I applied Pandas Categorical codes for each categorical
-feature adding “_encd” to the name and save the results in a file to be used in
+feature adding "_encd" to the name and save the results in a file to be used in
 further research.</p>
 
 <p class=MsoNormal>See <a
@@ -819,12 +818,12 @@ href="https://github.com/KaterynaD/Auto-Insurance-Risk-Classification-and-Claim-
 (R):</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:81.0pt;text-indent:-.25in'><span
-style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+style='font-family:Wingdings'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;
 </span></span>ChiSq test to test significance of the relation between
 categorical features and target and Cramer V test to measure the association.</p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:81.0pt;text-indent:-.25in'><span
-style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+style='font-family:Wingdings'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;
 </span></span>Wilcox test to test dependence numerical features with the
 target.</p>
 
@@ -1169,7 +1168,7 @@ does not require millions of samples to train.</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
 style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>It's a ”white-box” approach and provides interpretable results
+</span></span>It's a "white-box" approach and provides interpretable results
 via plots of features importance, partial dependencies and used decision trees.</p>
 
 <p class=MsoNormal>There are several algorithms based on gradient boosting. <a
@@ -1318,9 +1317,9 @@ or engineered). The spreadsheet is converted in an csv file and used in the
 code. The code reads the model definition from the file and run them one by one
 on 8 train/test sizes to calculate the metrics. Each model is compared to the
 first one described in the file (BaseModel) to get probability from t test.
-Based on the p value each model is categorized in one of the 3 groups: 1 – no
-changes, statistically the same as the BaseModel, 2 –significantly better then
-the BaseModel and 3 – significantly worse then the BaseModel.</p>
+Based on the p value each model is categorized in one of the 3 groups: 1 - no
+changes, statistically the same as the BaseModel, 2 - significantly better then
+the BaseModel and 3 - significantly worse then the BaseModel.</p>
 
 <p class=MsoNormal>The results (models metrics values, p and t values from
 t-test, group) are saved in an other csv file after each model run and can be
@@ -1389,8 +1388,8 @@ feature value but rather how this information is collected in the original
 system.</p>
 
 <p class=MsoNormal style='line-height:105%'>Let's say there are 3 feature
-values: “Yes”, “No” and “Unknown” (no value in the system). “Yes” and “No” have
-approximately the same probability of having claim and only “Unknown” is
+values: "Yes", "No" and "Unknown" (no value in the system). "Yes" and "No" have
+approximately the same probability of having claim and only "Unknown" is
 different. It looks like this information is collected specifically for drivers
 with claims. If it's a new driver in the system we can not predict using this
 feature. </p>
@@ -1416,7 +1415,7 @@ features output. Though I tried encoded values of categorical features.</p>
 <p class=MsoNormal>Frequency and Targeting Encoding is the way to deal with
 categorical features. No one high cardinality categorical feature was
 recognized as useful at Feature Importance step. I added these methods to the
-research with a thought to improve the high cardinality  features performance.</p>
+research with a thought to improve the high cardinality features performance.</p>
 
 <p class=MsoNormal>The model descriptions and results are in <a
 href="https://github.com/KaterynaD/Auto-Insurance-Risk-Classification-and-Claim-Prediction/blob/master/Feature%20Engineering%20Workbook.xlsx">Feature
@@ -1443,7 +1442,7 @@ same improvement</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>2.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>[Driver
-Age] – [Age when Driver obtained the License] e.g. Driver License Age works
+Age] - [Age when Driver obtained the License] e.g. Driver License Age works
 much better then just [Age when Driver obtained the License]</p>
 
 <p class=MsoNormal>Here is the <a
@@ -2746,7 +2745,7 @@ and Male</p>
 
 <p class=MsoNormal>Driver Age is a second by importance feature. In fact, Class
 and Driver Age are almost the same by importance. Some models from the ensemble
-has Class as the first one, the others – driver Age. </p>
+has Class as the first one, the others - driver Age. </p>
 
 <p class=MsoNormal style='page-break-after:avoid'><a href="img/Driver%20Age.png"><span
 style='color:windowtext;text-decoration:none'><img border=0 width=313
@@ -2772,7 +2771,7 @@ alt="Partial Dependency for License Age "></span></a></p>
 <p class=MsoCaption>Figure 11 Partial Dependency for License Age</p>
 
 <p class=MsoNormal>In general, it has approximately the same dependency as
-Driver Age. Decreased from 4 years till 12 years (20 – 28 years driver age),
+Driver Age. Decreased from 4 years till 12 years (20 - 28 years driver age),
 then a plateau till 48 years (64 years driver age) with maximum about 69 years
 (85 years driver age)</p>
 
@@ -2813,7 +2812,7 @@ It's much easy to park SMART then a truck or VAN.</p>
   none'><img border=0 width=251 height=202 id="Picture 31"
   src="Auto%20Insurance%20Risk%20Classification%20and%20Claim%20Prediction_files/image016.png"
   alt="Partial Dependency Vehicle Width,in"></span></a></p>
-  <p class=MsoCaption style='margin-left:.25in'>Figure 14  Partial Dependency
+  <p class=MsoCaption style='margin-left:.25in'>Figure 14 Partial Dependency
   Vehicle Width,in</p>
   </td>
  </tr>
