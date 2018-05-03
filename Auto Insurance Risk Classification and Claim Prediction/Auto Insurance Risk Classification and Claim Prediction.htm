@@ -397,10 +397,10 @@ style='color:windowtext;display:none;text-decoration:none'>1</span></a></p>
 <h1><a name="_Toc513026242">Introduction</a></h1>
 
 <p class=MsoNormal>The goal of the project is to build a dashboard to analyze
-how risky are policies and effective current rates.  </p>
+how risky are policies and effective current rates.</p>
 
 <p class=MsoNormal>The current state of the data does not allow easily
-accomplish even the first step – creating training and test data sets. So, the
+accomplish even the first step - creating training and test data sets. So, the
 first objective is to research available data sources and add into the
 corporate Data Warehouse all needed data in a form available for further
 processing.</p>
@@ -415,24 +415,24 @@ class=Heading1Char><span style='font-size:16.0pt;line-height:107%'>&nbsp;</span>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:0in'><a
 name="_Toc513026243"><span class=Heading1Char><span style='font-size:16.0pt;
-line-height:107%'>Data Sources and Data Flow.</span></span></a> </p>
+line-height:107%'>Data Sources and Data Flow</span></span></a> </p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:0in'>It’s only a
+<p class=MsoListParagraphCxSpMiddle style='margin-left:0in'>It's only a
 schematic description to provide understanding of the environment and
 challenges:</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Production Transactional System: an XML-based data source. XMLs
 are physically stored in varchar type columns in MS SQL database tables.</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>A regular process converts some XML data into relational tables
 in another MS SQL database. Historical reports are run from this database.</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>ETL process loads data into the corporate DW.</p>
 
 <p class=MsoNormal>Even available data in the relational form is a challenge
@@ -446,10 +446,10 @@ and processes. </p>
 <h2><a name="_Toc513026244">DW Data Model</a></h2>
 
 <p class=MsoNormal>Traditional DW approach is to create a slowly changing
-dimension (SCD) type 2 for entities changing over time.  Vehicle’s Estimated Annual
+dimension (SCD) type 2 for entities changing over time. Vehicle's Estimated Annual
 Distance or Drivers MVR Status can be different in each term and it impacts
 rates. It works best with transactional based fact table where you can see
-what’s changed in a risk attributes and how it impacts metrics. The dimension
+what's changed in a risk attributes and how it impacts metrics. The dimension
 is directly joined to a fact table.</p>
 
 <p class=MsoNormal style='page-break-after:avoid'><a href="img/Kimball.png"><span
@@ -486,8 +486,8 @@ systems: missing unique entities IDs, change dates and historical information. S
 of this missing info can be added into the source data base from XML original
 data source and adjusting current parsing procedure but it takes significant
 amount of research, resources and time. So, for now some surrogate data are
-used as unique entities ID’s and change dates. We loss some information but
-it’s acceptable as for now.  </p>
+used as unique entities ID's and change dates. We loss some information but
+it's acceptable as for now. </p>
 
 <p class=MsoNormal>The other issue of the available source data is the place of
 the fields. Some vehicle attributes look not in proper place and the other
@@ -509,7 +509,7 @@ or PL/SQL procedures). Adjusting and testing this type of process is not easy
 and fast.</p>
 
 <p class=MsoNormal>The good thing, however, there is a DIM_COVEREDRISK
-dimension (and references in FACT tables) in the original data model. It’s a
+dimension (and references in FACT tables) in the original data model. It's a
 general table without specific to risk items attributes. </p>
 
 <p class=MsoNormal>So, the solution is to reuse DIM_COVEREDRISK and join SCD
@@ -554,7 +554,7 @@ driver-vehicle combination. At fault claims for non-primary drivers were added
 into the data set to take into account all claims.</p>
 
 <p class=MsoNormal>As expected there are only 5.5% of driver-vehicle
-combinations with claims. It’s comparable with other datasets described in the
+combinations with claims. It's comparable with other datasets described in the
 open sources. </p>
 
 <p class=MsoNormal>However, the dataset looks incomplete because non-primary
@@ -590,7 +590,7 @@ the final list of features which do impact the model.</p>
 
 <p class=MsoNormal>Due to the data relation issues GEO information (zip,city)
 were not added at the first stage. Though I do not believe it should impact at
-fault claims.  There is a garage code in Vehicle data so let’s see.</p>
+fault claims. There is a garage code in Vehicle data so let's see.</p>
 
 <p class=MsoNormal>Several features were added into the list from an external
 source by VIN number. The idea was to check if there is something else which
@@ -602,35 +602,35 @@ model).</p>
 <p class=MsoNormal>External features:</p>
 
 <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>engine</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>height</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>length</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>width</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>make (manufacturer)</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>model</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>model year</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>model score</p>
 
 <p class=MsoNormal>Few <a
@@ -661,8 +661,8 @@ excluding first set of features</a></h2>
 
 <p class=MsoNormal>When the data sources are known and the plan of data
 selection is set we can review the available features if it even makes sense to
-include them into the data set for further investigation. It’s a simple step
-and it’s easy to perform while the data is in a data base using SQL.</p>
+include them into the data set for further investigation. It's a simple step
+and it's easy to perform while the data is in a data base using SQL.</p>
 
 <p class=MsoNormal>What I verified at this step:</p>
 
@@ -675,7 +675,7 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
 of records in each class.</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>3.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>What’s
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>What's
 the percent of the values are empty(Null) or have default values if they are from
 a DW. There are maybe attributes recently added to the system and not yet
 populated for a representative amount of records. The other reason of high
@@ -684,7 +684,7 @@ default attributes not used in the company. Few records maybe populated by
 mistake/training or in first customized versions. </p>
 
 <p class=MsoNormal style='margin-left:.5in'>Migration data from retired systems
-to a new one also may create not consistent set of features.  If percent is
+to a new one also may create not consistent set of features. If percent is
 relatively low but a column is no longer used it does not make sense to rely on
 the feature.</p>
 
@@ -801,7 +801,7 @@ but one of them have only very few records.</p>
 
 <p class=MsoNormal><a
 href="https://github.com/KaterynaD/Auto-Insurance-Risk-Classification-and-Claim-Prediction/blob/master/R/EDACorrelation.Rmd">Features
-correlation</a>  is also calculated and visualized as a part of the data
+correlation</a> is also calculated and visualized as a part of the data
 profile.</p>
 
 <p class=MsoNormal>I calculated Shapiro test to test normality of few numerical
@@ -1147,29 +1147,29 @@ preliminary research:</p>
 
 <p class=MsoNormal><a href="https://en.wikipedia.org/wiki/Gradient_boosting">Gradient
 Boosting</a> (GB) is a relatively new method for building insurance loss cost
-models. It’s widely used in recent machine learning competitions. There are
+models. It's widely used in recent machine learning competitions. There are
 several advantages to comparing to the traditional Generalized Linear Models
 and other machine learning algorithms.</p>
 
 <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>GB works very well with the large number of categorical features.
 It requires relatively less data preprocessing and knows how to handle missing
 and imbalance data.</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>We do have complex non-linear dependencies in the data and GB is
 a better choice then methods based on linear algorithms (GLM). </p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Comparing to other non-linear methods like neutral networks it
 does not require millions of samples to train.</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>It’s a ”white-box” approach and provides interpretable results
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>It's a ”white-box” approach and provides interpretable results
 via plots of features importance, partial dependencies and used decision trees.</p>
 
 <p class=MsoNormal>There are several algorithms based on gradient boosting. <a
@@ -1255,7 +1255,7 @@ did not find an optimal combination.</p>
 <p class=MsoNormal style='line-height:105%'>Several modules were created to
 test different parameters sets (<a
 href="https://github.com/KaterynaD/Auto-Insurance-Risk-Classification-and-Claim-Prediction/tree/master/ModelParametersOptimization/XGB">BayesianOptimization</a>).
-A notebook was created to test the approach, then it’s converted in a python
+A notebook was created to test the approach, then it's converted in a python
 program code which was run in a background mode.</p>
 
 <p class=MsoNormal style='line-height:105%'>The code produces an output in a
@@ -1267,7 +1267,7 @@ to analyze.</p>
 
 <h2><a name="_Toc513026256">Models Evaluation</a></h2>
 
-<p class=MsoNormal>Imbalance data set is one of the most challenging problem. That’s
+<p class=MsoNormal>Imbalance data set is one of the most challenging problem. That's
 why the right model evaluation method is a main research issue. Traditional
 metrics (accuracy, sensitivity, specificity, precision) lead to a biased
 classification when the classes are not equally distributed.</p>
@@ -1278,10 +1278,10 @@ curve (Area under curve, AUC) and Gini coefficient. </p>
 <p class=MsoNormal>AUC is equivalent to the probability that the classifier
 will rank randomly chosen positive sample higher than a randomly chosen
 negative sample. AUC value varies between 0.5 (random guessing) and 1. For at
-fault claim prediction task it’s usually 0.6-0.8 (fair to good performance).</p>
+fault claim prediction task it's usually 0.6-0.8 (fair to good performance).</p>
 
 <p class=MsoNormal>The other metric used in imbalance data classification is a
-chance-standardize variant of the AUC is Gini coefficient.  It’s related to AUC
+chance-standardize variant of the AUC is Gini coefficient. It's related to AUC
 in this way:</p>
 
 <p class=MsoNormal>G = 2AUC-1</p>
@@ -1289,7 +1289,7 @@ in this way:</p>
 <p class=MsoNormal>Gini coefficient values are between 0 and 1 (complete
 separation between the 2 distribution). </p>
 
-<p class=MsoNormal>Let’s say G’s are metric values obtained from the model on
+<p class=MsoNormal>Let's say G's are metric values obtained from the model on
 different train/test sizes. They are random variables, normally distributed.</p>
 
 <p class=MsoNormal>To compare one model performance to an other I used
@@ -1297,16 +1297,16 @@ two-tailed paired t test. The test asks the question: is the Gini coefficient
 of the two system different</p>
 
 <p class=MsoListParagraphCxSpFirst style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Null hypothesis: the 2 models have the same Gini coefficient</p>
 
 <p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Alternate hypothesis: one of the model has a different Gini
 coefficient</p>
 
 <p class=MsoNormal>Paired t-test is used to calculate probability p that mean
-of G’s would arise from null hypothesis</p>
+of G's would arise from null hypothesis</p>
 
 <p class=MsoNormal>If p is sufficiently small (typically &lt; 0.05) then reject
 the null hypothesis.</p>
@@ -1388,11 +1388,11 @@ because if there is a dependency from a feature it is not dependency on the
 feature value but rather how this information is collected in the original
 system.</p>
 
-<p class=MsoNormal style='line-height:105%'>Let’s say there are 3 feature
+<p class=MsoNormal style='line-height:105%'>Let's say there are 3 feature
 values: “Yes”, “No” and “Unknown” (no value in the system). “Yes” and “No” have
 approximately the same probability of having claim and only “Unknown” is
 different. It looks like this information is collected specifically for drivers
-with claims. If it’s a new driver in the system we can not predict using this
+with claims. If it's a new driver in the system we can not predict using this
 feature. </p>
 
 <h2><a name="_Toc513026258">External Features</a></h2>
@@ -1415,7 +1415,7 @@ features output. Though I tried encoded values of categorical features.</p>
 
 <p class=MsoNormal>Frequency and Targeting Encoding is the way to deal with
 categorical features. No one high cardinality categorical feature was
-recognized as useful at Feature Importance step.  I added these methods to the
+recognized as useful at Feature Importance step. I added these methods to the
 research with a thought to improve the high cardinality  features performance.</p>
 
 <p class=MsoNormal>The model descriptions and results are in <a
@@ -1443,8 +1443,8 @@ same improvement</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'>2.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>[Driver
-Age] – [Age when Driver obtained the  License] e.g. Driver License Age works
-much better then just [Age when Driver obtained the  License]</p>
+Age] – [Age when Driver obtained the License] e.g. Driver License Age works
+much better then just [Age when Driver obtained the License]</p>
 
 <p class=MsoNormal>Here is the <a
 href="https://github.com/KaterynaD/Auto-Insurance-Risk-Classification-and-Claim-Prediction/blob/master/Finding%20Best%20Model/XGB/Simple%20calculated%20feature.ipynb">notebook</a>
@@ -1471,18 +1471,18 @@ added into the full model (other categorical features present). </p>
 <p class=MsoNormal>Interesting fact regarding 2 high cardinality features:</p>
 
 <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Manufacturer is an original feature from the system. The content
 is inconsistent. Several acronyms and similar words can be used for the same
 manufacturer: Toyota, TYTA, etc</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>External_make is a feature found by VIN number in a public
-database. The names are standardized, e.g.it’s always Toyota</p>
+database. The names are standardized, e.g.it's always Toyota</p>
 
 <p class=MsoNormal>Performance of the both features is low without encoding.
-It’s much better with frequency encoding. But performance of External_Make,
+It's much better with frequency encoding. But performance of External_Make,
 standardized feature, is higher then Manufacturer. </p>
 
 <p class=MsoNormal style='margin-left:63.0pt'>&nbsp;</p>
@@ -1604,10 +1604,10 @@ href="https://kaggle2.blob.core.windows.net/forum-message-attachments/225952/744
 style='background:white'>paper by Daniele Micci-Barreca</span></a><span
 style='color:#24292E;background:white'>.</span></p>
 
-<p class=MsoNormal>Since the target attribute is involved in the encoding it’s
+<p class=MsoNormal>Since the target attribute is involved in the encoding it's
 important to make sure the model is not overfitted. E.g. only training data are
 involved into the process. For the same purpose noise is added to the data.
-It’s decrease the output metric but prevent overfitting.</p>
+It's decrease the output metric but prevent overfitting.</p>
 
 <p class=MsoNormal>The model spreadsheet a little bit more complex because it
 includes 3 more columns for each feature: feature name itself, min_samples_leaf,
@@ -1642,14 +1642,14 @@ of targeting encoding.</p>
 cardinality features performance in this data set.</p>
 
 <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Targeting Encoding <a
 href="https://github.com/KaterynaD/Auto-Insurance-Risk-Classification-and-Claim-Prediction/blob/master/Finding%20Best%20Model/XGB/Targeting%20Encoding.ipynb">notebook</a>
 and <a
 href="https://github.com/KaterynaD/Auto-Insurance-Risk-Classification-and-Claim-Prediction/blob/master/Finding%20Best%20Model/XGB/TargetingEncoding.py">code</a></p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+style='font-family:Symbol'>.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span>Targeting Encoding with Binning <a
 href="https://github.com/KaterynaD/Auto-Insurance-Risk-Classification-and-Claim-Prediction/blob/master/Finding%20Best%20Model/XGB/Targeting%20Encoding%20with%20Binning.ipynb">notebook</a>
 and <a
@@ -2319,7 +2319,7 @@ alt="Extended Model Train and Test results"></span></a></p>
 <p class=MsoCaption>Figure 4 Extended Model Train and Test results</p>
 
 <p class=MsoNormal>The result below is a random in some sense but can explain
-what’s behind the metric we received.</p>
+what's behind the metric we received.</p>
 
 <p class=MsoNormal>To prepare data and charts below I used code from <a
 href="https://github.com/KaterynaD/Auto-Insurance-Risk-Classification-and-Claim-Prediction/tree/master/XGBFinalModel">this
@@ -2671,9 +2671,9 @@ age or vehicle age plus driver sender and marital status.</p>
 
 <h2><a name="_Toc513026273">Partial Dependency</a></h2>
 
-<p class=MsoNormal>Class is most important feature.  It’s based on several
+<p class=MsoNormal>Class is most important feature. It's based on several
 attributes of driver and vehicle together. It was added to Vehicle table in the
-relation data base but it rather belongs to something what’s joined vehicle and
+relation data base but it rather belongs to something what's joined vehicle and
 driver together (policy or risk or applied rates or discounts table).</p>
 
 <p class=MsoNormal>Apparently, class codes system is different in different
@@ -2688,7 +2688,7 @@ of the population is 20 years.</p>
 
 <p class=MsoNormal>Interesting, calculated driver license age, gender and
 vehicle age features without Class do not provide the same level of the metric.
-I think it’s because there are missing values in the database and the date of
+I think it's because there are missing values in the database and the date of
 obtaining of the driver license maybe the date of the current driver license,
 not the original.</p>
 
@@ -2757,7 +2757,7 @@ alt=" Partial Dependency for Driver Age "></span></a></p>
 <p class=MsoCaption>Figure 10 Partial Dependency for Driver Age</p>
 
 <p class=MsoNormal>The risk of an accident is decreased from 20 to 25 years,
-then there is a big plateau between 25 and 57 years. It’s gradually increased
+then there is a big plateau between 25 and 57 years. It's gradually increased
 after 57 years and reach maximum at 81 years.</p>
 
 <p class=MsoNormal>License Age (the difference between driver age and the age
@@ -2791,7 +2791,7 @@ alt="Partial Dependency for Vehicle Age"></span></a></p>
 <p class=MsoNormal>Vehicle dimensions (length and width in inches). The smaller
 (shorter and narrower) the vehicle, the less risk of an accident. Taking into
 account, the most of the accidents are related to parking it does make sense.
-It’s much easy to park SMART then a truck or VAN.</p>
+It's much easy to park SMART then a truck or VAN.</p>
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
  style='margin-left:-5.4pt;border-collapse:collapse;border:none'>
@@ -2836,7 +2836,7 @@ Annual Distance</p>
 
 <p class=MsoNormal>Rating Value. Vehicles with a higher rating have less chance
 to be in an accident. Though, the feature is not complete in the data. Looks
-like it’s spread by few separated fields in the intermediate data base and not
+like it's spread by few separated fields in the intermediate data base and not
 populated correctly in each run of the conversion from XML to a relation
 structure.</p>
 
@@ -2883,11 +2883,11 @@ importance is stronger, then the status.</p>
 <p class=MsoNormal style='margin-left:9.0pt'>&nbsp;</p>
 
 <p class=MsoNormal>Driver and Vehicle Numbers. Not clear if the numbers are
-related to real life use of the vehicles or it’s just numbers used in
+related to real life use of the vehicles or it's just numbers used in
 documentation. The higher the number the higher accident risk.</p>
 
 <p class=MsoNormal>Vehicle Body Type. The original feature has many levels due
-to non- standardized data.  There is the same dependency as in the vehicle dimensions.
+to non- standardized data. There is the same dependency as in the vehicle dimensions.
 The smaller the vehicle, the less chance of an accident. VANs, pickups, wagons
 have higher risk then sedans and coupes.</p>
 
@@ -2937,7 +2937,7 @@ alt=" Partial Dependency Marital Status "></span></a></p>
 <p class=MsoCaption>Figure 22 Partial Dependency Marital Status</p>
 
 <p class=MsoNormal>Carpool Flag (Discount). There are less accidents if drivers
-are carpool. It’s naturally to carpool only if you are really a good driver. On
+are carpool. It's naturally to carpool only if you are really a good driver. On
 the other hand, there are very few Yes in the data. The result maybe biased by
 the data collection. Anyway, it is not high important feature.</p>
 
@@ -2978,7 +2978,7 @@ description</a></h1>
 of a DW data model with the risks items was created. While the work on DW ETL
 to include risks items data is still in progress, the data set for a machine
 learning model was built from the source data source and partially from DW
-what’s already available. The SQL is quite cumbersome and does not allow to
+what's already available. The SQL is quite cumbersome and does not allow to
 include all needed features.</p>
 
 <p class=MsoNormal>Base and Extended classification machine learning models
