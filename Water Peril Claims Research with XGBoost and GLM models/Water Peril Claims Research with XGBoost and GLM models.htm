@@ -9720,17 +9720,11 @@ what you need.</p>
 <p class=MsoNormal>Amazon <span class=SpellE>SageMaker</span> supports two ways
 to use the <span class=SpellE>XGBoost</span> algorithm:</p>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;mso-list:l5 level1 lfo26'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span class=SpellE>XGBoost</span> built-in
-algorithm</p>
+<li>XGBoost</span> built-in
+algorithm</li>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;mso-list:l5 level1 lfo26'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span class=SpellE>XGBoost</span> open source
-algorithm</p>
+<li>XGBoost</span> open source
+algorithm</li>
 
 <p class=MsoNormal>The main problem of built-in algorithm is a stale version.
 The open source <span class=SpellE>XGBoost</span> typically supports a more
@@ -9738,27 +9732,18 @@ recent version. I also did not find a way to return <span class=SpellE>Shap</spa
 Values along with prediction using built-in <span class=SpellE>XGBoost</span>. <span
 class=GramE>However</span> using the built-in algorithm version of <span
 class=SpellE>XGBoost</span> is simpler than using the open source version,
-because you don’t have to write a training script.</p>
+because you don`t have to write a training script.</p>
 
 <p class=MsoNormal>Here are code examples which do essentially the same in 2
 different ways: </p>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;mso-list:l0 level1 lfo24'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Training 5 models (folds) base on 7 features (BaseModel0),
-predict risk for training and testing datasets and estimate average accuracy</p>
+<li>Training 5 models (folds) base on 7 features (BaseModel0),
+predict risk for training and testing datasets and estimate average accuracy</li>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l0 level1 lfo24'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Predicting risk for the whole dataset (~2M rows)
-with <span class=SpellE>Shap</span> Values</p>
+<li>Predicting risk for the whole dataset (~2M rows)
+with <span class=SpellE>Shap</span> Values</li>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;mso-list:l0 level1 lfo24'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Generate partial dependency</p>
+<li>Generate partial dependency</li>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -9873,17 +9858,17 @@ This real job to train a model or run prediction is done in the second part.</p>
 
 <p class=MsoNormal><span class=SpellE>SageMaker</span> entry points to train
 and predict:</p>
-<li>
-<ul><a
+
+<li><a
 href="https://github.com/KaterynaD/Water-Peril-Claims-Research-with-XGBoost-and-GLM-models/blob/master/Python/SageMaker%20ModelTraining.py">Model
-Training</a></ul>
+Training</a></li>
 
-<ul><a
-href="https://github.com/KaterynaD/Water-Peril-Claims-Research-with-XGBoost-and-GLM-models/blob/master/Python/SageMaker%20Prediction.py">Prediction</a></ul>
+<li><a
+href="https://github.com/KaterynaD/Water-Peril-Claims-Research-with-XGBoost-and-GLM-models/blob/master/Python/SageMaker%20Prediction.py">Prediction</a></li>
 
-<ul><a
+<li><a
 href="https://github.com/KaterynaD/Water-Peril-Claims-Research-with-XGBoost-and-GLM-models/blob/master/Python/SageMaker%20Prediction%20with%20Shap%20Values.py">Prediction
-with <span class=SpellE>Shap</span> Values</a></ul>
+with <span class=SpellE>Shap</span> Values</a>
 </li>
 <p class=MsoNormal>The other interesting feature of <span class=SpellE>SageMaker</span>
 is experiments automation. It allows not just make the experiment a consistent
