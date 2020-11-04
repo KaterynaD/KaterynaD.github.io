@@ -9782,7 +9782,7 @@ Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>The time of
   running code in a <a
   href="https://katerynad.github.io/Water%20Peril%20Claims%20Research%20with%20XGBoost%20and%20GLM%20models/HTML/Final.3.0.1.%20Frequency%20-%20BaseModel0%20Classification%20%20XGBoost.html">traditional
-  way</a> is low (~1 – 2 min per model training) and <a
+  way</a> is low (~1-2 min per model training) and <a
   href="https://katerynad.github.io/Water%20Peril%20Claims%20Research%20with%20XGBoost%20and%20GLM%20models/HTML/SageMaker%20-%20Frequency%20-%20BaseModel0%20Classification%20%20XGBoost.html"><span
   class=SpellE>SageMaker</span> approach</a> <span class=SpellE>can not</span>
   decrease it more. However, I did not find a way how to re-use the model I created
@@ -9844,7 +9844,7 @@ Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>The process uses
   a lot of in memory data manipulation to predict base on all available <span
   class=GramE>features</span> combinations. The result is a huge dataset to
-  predict. It’s even more slow then <span class=SpellE>Shap</span> value
+  predict. It`s even more slow then <span class=SpellE>Shap</span> value
   creation in a <a
   href="https://github.com/KaterynaD/Water-Peril-Claims-Research-with-XGBoost-and-GLM-models/blob/master/Python/PartialDependencyBaseModel0.py">traditional
   way</a>. <a
@@ -9853,7 +9853,7 @@ Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"
   data in memory. I create the dataset in memory on a local machine and upload
   it to S3. It took ~40 min. the prediction is fast. Around 20 min per model running
   in parallel. The last step is to download the predicted data and average. <span
-  class=GramE>That’s</span> also takes around 30 min and not free (downloading
+  class=GramE>That`s</span> also takes around 30 min and not free (downloading
   data from AWS). The total time is an hour and a half. Much faster <span
   class=GramE>then</span> a traditional approach but for the price. Since I do
   load data in <span class=GramE>Redshift</span> I may load data from S3
@@ -9866,35 +9866,25 @@ Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"
 
 <p class=MsoNormal>If a traditional way code is just one part which do the job,
 <span class=SpellE>SageMaker</span> code consists from 2 parts: the first part works
-with <span class=SpellE>SageMaker</span> and boto3 <span
-style='mso-spacerun:yes'> </span>frameworks to configure, create and start instances
+with <span class=SpellE>SageMaker</span> and boto3 frameworks to configure, create and start instances
 to train a model or run prediction (see the links in the table above); the
 second part is separate files which are loaded to the instance created on a fly.
 This real job to train a model or run prediction is done in the second part.</p>
 
 <p class=MsoNormal><span class=SpellE>SageMaker</span> entry points to train
 and predict:</p>
-
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;mso-list:l10 level1 lfo25'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><a
+<li>
+<ul><a
 href="https://github.com/KaterynaD/Water-Peril-Claims-Research-with-XGBoost-and-GLM-models/blob/master/Python/SageMaker%20ModelTraining.py">Model
-Training</a></p>
+Training</a></ul>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l10 level1 lfo25'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><a
-href="https://github.com/KaterynaD/Water-Peril-Claims-Research-with-XGBoost-and-GLM-models/blob/master/Python/SageMaker%20Prediction.py">Prediction</a></p>
+<ul><a
+href="https://github.com/KaterynaD/Water-Peril-Claims-Research-with-XGBoost-and-GLM-models/blob/master/Python/SageMaker%20Prediction.py">Prediction</a></ul>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;mso-list:l10 level1 lfo25'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><a
+<ul><a
 href="https://github.com/KaterynaD/Water-Peril-Claims-Research-with-XGBoost-and-GLM-models/blob/master/Python/SageMaker%20Prediction%20with%20Shap%20Values.py">Prediction
-with <span class=SpellE>Shap</span> Values</a></p>
-
+with <span class=SpellE>Shap</span> Values</a></ul>
+</li>
 <p class=MsoNormal>The other interesting feature of <span class=SpellE>SageMaker</span>
 is experiments automation. It allows not just make the experiment a consistent
 object with model training jobs but also visualize and track the results in <span
@@ -10368,7 +10358,7 @@ data.</p>
 <p class=MsoNormal>Classification <span class=SpellE>XGBoost</span> works
 faster and is more robust and documented. Prediction generated from <span
 class=SpellE>XGBoost</span> classification is not a probability. <span
-class=GramE>It’s</span> a probability like score and require calibration if
+class=GramE>It`s</span> a probability like score and require calibration if
 probability is needed.</p>
 
 <p class=MsoNormal>If we do not want exposures impact the result,
