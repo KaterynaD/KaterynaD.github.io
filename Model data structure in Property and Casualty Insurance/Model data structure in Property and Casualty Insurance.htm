@@ -26,15 +26,15 @@ w\:* {behavior:url(#default#VML);}
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Kateryna Drogaieva</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>6069</o:TotalTime>
-  <o:Created>2020-12-10T00:24:00Z</o:Created>
-  <o:LastSaved>2020-12-10T00:24:00Z</o:LastSaved>
+  <o:TotalTime>6072</o:TotalTime>
+  <o:Created>2020-12-10T02:04:00Z</o:Created>
+  <o:LastSaved>2020-12-10T02:04:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
   <o:Words>4312</o:Words>
-  <o:Characters>24580</o:Characters>
+  <o:Characters>24585</o:Characters>
   <o:Lines>204</o:Lines>
   <o:Paragraphs>57</o:Paragraphs>
-  <o:CharactersWithSpaces>28835</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>28840</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -1078,6 +1078,9 @@ span.Heading2Char
 span.SpellE
 	{mso-style-name:"";
 	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -1753,7 +1756,7 @@ word-wrap:break-word'>
  mso-bidi-theme-font:minor-bidi;color:windowtext'><w:sdtPr></w:sdtPr></span></p>
  <p class=MsoToc1 style='tab-stops:right dotted 467.5pt'><!--[if supportFields]><span
  style='mso-element:field-begin'></span><span
- style='mso-spacerun:yes'> </span>TOC \o &quot;1-3&quot; \h \z \u <span
+ style='mso-spacerun:yes'>Â </span>TOC \o &quot;1-3&quot; \h \z \u <span
  style='mso-element:field-separator'></span><![endif]--><a href="#_Toc57905471"><span
  style='mso-no-proof:yes'>Introduction</span><span style='color:windowtext;
  display:none;mso-hide:screen;mso-no-proof:yes;text-decoration:none;text-underline:
@@ -2034,9 +2037,10 @@ possible to have duplicate VINs in a policy as well as duplicate or double assig
 
 <p class=MsoNormal>A transactional system may allow to add not just primary
 assigned drivers but also primarily or occasional. For some types of analysis
-(multivariate e.g., GLM or XGBoost), a researcher may need not just primary
-assigned drivers but also any possible combination of vehicles and drivers in a
-policy to get proper characteristics of risks to include in a model.</p>
+(multivariate e.g., GLM or <span class=SpellE>XGBoost</span>), a researcher may
+need not just primary assigned drivers but also any possible combination of
+vehicles and drivers in a policy to get proper characteristics of risks to
+include in a model.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -2130,13 +2134,14 @@ dates and a claims Loss Date.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>The other problem is joining claims to a specific risk in a
-PersonalAuto policy. Unknown vehicle and/or driver in the claims database is
-not always an issue but can be a natural claim feature. A claim can be related
-to a rented vehicle. A rented vehicle is not part of the policy database and no
-additional info (risk characteristics) is available in a claim. Even when a
-vehicle is known, a driver can be unknown in the policy database but permitted
-by an owner to use the vehicle or not relevant to a claim (parked vehicle).</p>
+<p class=MsoNormal>The other problem is joining claims to a specific risk in a <span
+class=SpellE>PersonalAuto</span> policy. Unknown vehicle and/or driver in the
+claims database is not always an issue but can be a natural claim feature. A
+claim can be related to a rented vehicle. A rented vehicle is not part of the
+policy database and no additional info (risk characteristics) is available in a
+claim. Even when a vehicle is known, a driver can be unknown in the policy
+database but permitted by an owner to use the vehicle or not relevant to a
+claim (parked vehicle).</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -2147,11 +2152,11 @@ claims are not relevant it`s important to flag such replacements for filtering.<
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>PersonalAuto claims may involve more than one vehicle. A
-claim automatically created by a data feed may have populated a wrong column (“other
-party” instead of “insured vehicle”) with a known vehicle VIN number from a
-policy. It`s a good idea to research all related tables before use default values
-in the modeling data.</p>
+<p class=MsoNormal><span class=SpellE>PersonalAuto</span> claims may involve
+more than one vehicle. A claim automatically created by a data feed may have populated
+a wrong column (``other party`` instead of ``insured vehicle``) with a known
+vehicle VIN number from a policy. It`s a good idea to research all related
+tables before use default values in the modeling data.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -2179,13 +2184,14 @@ different lines. </p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Each mid-term change/record in PersonalAuto modeling data is
-for a specific coverage. On the opposite, we do have coverage related data
-(premium, losses) in columns in Property modeling data. In addition, losses are
-aggregated not just by coverage but also on perils and catastrophe basis in
-Property data. Cause of loss is not so important for PersonalAuto analysis and
-catastrophe claims are rare in this line of business. That`s why they are just
-additional columns in PersonalAuto modeling data. In this way catastrophe losses
+<p class=MsoNormal>Each mid-term change/record in <span class=SpellE>PersonalAuto</span>
+modeling data is for a specific coverage. On the opposite, we do have coverage
+related data (premium, losses) in columns in Property modeling data. In
+addition, losses are aggregated not just by coverage but also on perils and catastrophe
+basis in Property data. Cause of loss is not so important for <span
+class=SpellE>PersonalAuto</span> analysis and catastrophe claims are rare in
+this line of business. That`s why they are just additional columns in <span
+class=SpellE>PersonalAuto</span> modeling data. In this way catastrophe losses
 can be easily separated.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
@@ -2197,9 +2203,10 @@ we extract data from a retired one and a current. </p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>PersonalAuto data are often analyzed for specific limits
-combinations. That`s why for easy filtering we have BI and some other limits in
-each record even if it`s another coverage dataset record. </p>
+<p class=MsoNormal><span class=SpellE>PersonalAuto</span> data are often
+analyzed for specific limits combinations. That`s why for easy filtering we
+have BI and some other limits in each record even if it`s another coverage dataset
+record. </p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -2211,7 +2218,8 @@ each record even if it`s another coverage dataset record. </p>
 
 <p class=MsoNormal>There are hundreds of available variables describing a risk.
 Most of them are categorical with many levels and require conversion. They are
-coming from insured, agents, vendors data report, underwriters, etc</p>
+coming from insured, agents, vendors data report, underwriters, <span
+class=SpellE>etc</span></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -2221,25 +2229,31 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>
   <td width=324 nowrap valign=bottom style='width:242.75pt;border:solid windowtext 1.0pt;
   mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>AllPerilDeductible<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>AllPerilDeductible</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Gatedcommunityind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Gatedcommunityind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>RentersInsurance<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>RentersInsurance</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
@@ -2255,33 +2269,41 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>BurglaryAlarmType<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>BurglaryAlarmType</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Homegardcreditind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Homegardcreditind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>ReplacementCostDwellingInd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>ReplacementCostDwellingInd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Tenantevictions<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Tenantevictions</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:2;height:15.0pt'>
@@ -2289,25 +2311,31 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>ConstructionCd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>ConstructionCd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>KitchenFireExtinguisherind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>KitchenFireExtinguisherind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Replacementvalueind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Replacementvalueind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2323,33 +2351,41 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Deadboltind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Deadboltind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>NeighborhoodCrimeWatchInd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>NeighborhoodCrimeWatchInd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>RoofCd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>RoofCd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>UsageType<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>UsageType</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:4;height:15.0pt'>
@@ -2357,33 +2393,41 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>DeluxePackageInd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>DeluxePackageInd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Numberoffamilies<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Numberoffamilies</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>SafeguardPlusInd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>SafeguardPlusInd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>WaterDeductible<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>WaterDeductible</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:5;height:15.0pt'>
@@ -2391,33 +2435,41 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Equipmentbreakdown<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Equipmentbreakdown</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>OccupancyCd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>OccupancyCd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>SecondaryResidence<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>SecondaryResidence</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>WaterDetectionDevice<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>WaterDetectionDevice</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:6;height:15.0pt'>
@@ -2425,33 +2477,41 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>FireAlarmType<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>FireAlarmType</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>OrdinanceOrLawPct<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>OrdinanceOrLawPct</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Serviceline<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Serviceline</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>WaterRiskFreq<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>WaterRiskFreq</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:7;height:15.0pt'>
@@ -2459,33 +2519,41 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>FireHazardScore<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>FireHazardScore</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Poolind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Poolind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>SmokeDetector<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>SmokeDetector</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>WaterRiskSeverity<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>WaterRiskSeverity</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:8;height:15.0pt'>
@@ -2493,25 +2561,31 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>FireLineAssessment<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>FireLineAssessment</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>PropertyManager<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>PropertyManager</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Sprinklersystem<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Sprinklersystem</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2527,33 +2601,41 @@ coming from insured, agents, vendors data report, underwriters, etc</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>FunctionalReplacementCost<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>FunctionalReplacementCost</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>ProtectionClass<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>ProtectionClass</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>SqFt<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>SqFt</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=186 nowrap valign=bottom style='width:139.25pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>YearBuilt<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>YearBuilt</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
 </table>
@@ -2571,25 +2653,31 @@ Homeowners)</p>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>
   <td width=324 nowrap valign=bottom style='width:242.75pt;border:solid windowtext 1.0pt;
   mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>acci_pointschargedterm<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>acci_pointschargedterm</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>drivertypecd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>drivertypecd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>newteenexpirationdt<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>newteenexpirationdt</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:1;height:15.0pt'>
@@ -2605,17 +2693,21 @@ Homeowners)</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>gendercd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>gendercd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>newtostateind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>newtostateind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:2;height:15.0pt'>
@@ -2623,25 +2715,31 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>birthdt<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>birthdt</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>gooddriverind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>gooddriverind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>occupationclasscd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>occupationclasscd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:3;height:15.0pt'>
@@ -2657,17 +2755,21 @@ Homeowners)</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>licensedstateprovcd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>licensedstateprovcd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>other_pointschargedterm<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>other_pointschargedterm</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:4;height:15.0pt'>
@@ -2675,25 +2777,31 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>driverage<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>driverage</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>licensedt<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>licensedt</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>scholasticdiscountind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>scholasticdiscountind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:5;height:15.0pt'>
@@ -2701,25 +2809,31 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>driverinceptiondate<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>driverinceptiondate</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>licensenumber<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>licensenumber</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>susp_pointschargedterm<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>susp_pointschargedterm</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:6;height:15.0pt'>
@@ -2727,25 +2841,31 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>driverlicenseage<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>driverlicenseage</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>maritalstatuscd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>maritalstatuscd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>viol_pointschargedterm<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>viol_pointschargedterm</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:7;height:15.0pt'>
@@ -2753,17 +2873,21 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>drivernumber<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>drivernumber</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>maturedriverind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>maturedriverind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2779,17 +2903,21 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>driverstatuscd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>driverstatuscd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>mvrstatus<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>mvrstatus</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2805,17 +2933,21 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>DriverTrainingInd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>DriverTrainingInd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=240 nowrap valign=bottom style='width:2.5in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>mvrstatusdt<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>mvrstatusdt</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2836,25 +2968,31 @@ Homeowners)</p>
  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.0pt'>
   <td width=309 nowrap valign=bottom style='width:231.95pt;border:solid windowtext 1.0pt;
   mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Annual_Mileage_Estimate<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Annual_Mileage_Estimate</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Last_Owner_Recent_Annual_Mileage<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Last_Owner_Recent_Annual_Mileage</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=215 nowrap valign=bottom style='width:161.0pt;border:solid windowtext 1.0pt;
   border-left:none;mso-border-top-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>restraintcd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>restraintcd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:1;height:15.0pt'>
@@ -2862,9 +3000,11 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>antitheftcd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>antitheftcd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2878,9 +3018,11 @@ Homeowners)</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>titlehistoryissue<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>titlehistoryissue</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:2;height:15.0pt'>
@@ -2888,25 +3030,31 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>AverageMileage<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>AverageMileage</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>medicalpartsaccessibility<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>medicalpartsaccessibility</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=215 nowrap valign=bottom style='width:161.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>vehbodytypecd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>vehbodytypecd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:3;height:15.0pt'>
@@ -2914,9 +3062,11 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>CaliforniaRecentMileage<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>CaliforniaRecentMileage</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2930,9 +3080,11 @@ Homeowners)</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>vehicleinceptiondate<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>vehicleinceptiondate</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:4;height:15.0pt'>
@@ -2940,25 +3092,31 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>daysperweekdriven<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>daysperweekdriven</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>ModeledAnnualMileage<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>ModeledAnnualMileage</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=215 nowrap valign=bottom style='width:161.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>vehusecd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>vehusecd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:5;height:15.0pt'>
@@ -2966,17 +3124,21 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Estimated_Current_Mileage<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Estimated_Current_Mileage</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>modelyr<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>modelyr</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=215 nowrap valign=bottom style='width:161.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -2992,25 +3154,31 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>estimatedannualdistance<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>estimatedannualdistance</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>neworusedind<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>neworusedind</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=215 nowrap valign=bottom style='width:161.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>weekspermonthdriven<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>weekspermonthdriven</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:7;height:15.0pt'>
@@ -3018,17 +3186,21 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>estimatedworkdistance<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>estimatedworkdistance</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>odometerreading<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>odometerreading</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=215 nowrap valign=bottom style='width:161.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'></td>
@@ -3038,17 +3210,21 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Last_Owner_Average_Miles<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Last_Owner_Average_Miles</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>performancecd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>performancecd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=215 nowrap valign=bottom style='width:161.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'></td>
@@ -3058,17 +3234,21 @@ Homeowners)</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Last_Owner_Government_Recent_Annual_Mileage<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Last_Owner_Government_Recent_Annual_Mileage</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=227 nowrap valign=bottom style='width:169.95pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>RecentAverageMileage<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>RecentAverageMileage</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=215 nowrap valign=bottom style='width:161.0pt;padding:0in 5.4pt 0in 5.4pt;
   height:15.0pt'></td>
@@ -3077,7 +3257,7 @@ Homeowners)</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Table 2 Sample variables for Auto risks (PersonalAuto)</p>
+<p class=MsoNormal>Table 2 Sample variables for Auto risks (<span class=SpellE>PersonalAuto</span>)</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -3182,13 +3362,13 @@ DIM_VEHICLE, DIM_DRIVER.</p>
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>Another group of variables is calculated attributes. We may
-not have them “as is” in a table in transactional or data warehouse system but
-they can be pre-calculated based on other related data. As an example, the total
-number of insured properties/policies in a company per insured. For
-PersonalAuto analysis important to have number of active vehicles, drivers, non-drivers,
-excluded drivers , young drivers at each midterm change. <span class=SpellE>PersonalAuto</span>
-policies may have only liability coverages and others only Comprehensive
-coverage. These policies can be flagged in the data.</p>
+not have them ``as is`` in a table in transactional or data warehouse system
+but they can be pre-calculated based on other related data. As an example, the total
+number of insured properties/policies in a company per insured. For <span
+class=SpellE>PersonalAuto</span> analysis important to have number of active vehicles,
+drivers, non-drivers, excluded drivers , young drivers at each midterm change. <span
+class=SpellE>PersonalAuto</span> policies may have only liability coverages and
+others only Comprehensive coverage. These policies can be flagged in the data.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -3203,8 +3383,8 @@ numbers and policy term IDs are must have in the modeling data but maybe not in
 training dataset. But think about correlation between multiple renewals of the
 same policy included in the dataset. A researcher may wish to include policy
 term IDs specifically for this random effect. The rest of the policy level
-attributes (agency, product, company etc.) are useful for special research filtering.
-</p>
+attributes (agency, product, company etc.) are useful for special research
+filtering. </p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -3414,11 +3594,11 @@ modeling dataset.</p>
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>Since Insurance is a highly regulated business there is
-always a chance the external data are not supported by a regulator. For
-example, using in modeling social-media usage habits (other than phone use
-while driving) is prohibited in Nevada. The rules are specific for each state.
-It may be a good idea to add comments in a Data Catalog tool for each external
-dataset if its allowed to be used and for what kind of models.</p>
+always a chance the external data are not supported by a regulator. For example,
+using in modeling social-media usage habits (other than phone use while
+driving) is prohibited in Nevada. The rules are specific for each state. It may
+be a good idea to add comments in a Data Catalog tool for each external dataset
+if its allowed to be used and for what kind of models.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -3478,10 +3658,10 @@ based on a catastrophe flag.</p>
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>Mix of small and very large losses impacts the result of
-modeling. If it`s the case, like in PersonalAuto line, capping losses at some
-thresholds can help to create more stable models. A threshold should be set at
-a point to discover a systematic part, but not too high to capture noise from
-large losses.</p>
+modeling. If it`s the case, like in <span class=SpellE>PersonalAuto</span> line,
+capping losses at some thresholds can help to create more stable models. A
+threshold should be set at a point to discover a systematic part, but not too
+high to capture noise from large losses.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -3885,8 +4065,8 @@ large losses.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Table 4 Example of capping claim losses in PersonalAuto
-model data</p>
+<p class=MsoNormal>Table 4 Example of capping claim losses in <span
+class=SpellE>PersonalAuto</span> model data</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -3931,9 +4111,11 @@ model data</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:30.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>cova_il_nc_<b>water</b><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>cova_il_nc_<b>water</b></span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=138 valign=bottom style='width:103.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -3951,15 +4133,17 @@ model data</p>
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Non- Catatastrophe Wind &amp; Hail<o:p></o:p></span></p>
+  color:black'>Non- <span class=SpellE>Catatastrophe</span> Wind &amp; Hail<o:p></o:p></span></p>
   </td>
   <td width=132 nowrap valign=bottom style='width:99.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>cova_il_nc_<b>wh</b><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>cova_il_nc_<b>wh</b></span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=138 valign=bottom style='width:103.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -3977,15 +4161,18 @@ model data</p>
   0in 5.4pt 0in 5.4pt;height:30.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Non- Catatastrophe Theft &amp; Vandalism<o:p></o:p></span></p>
+  color:black'>Non- <span class=SpellE>Catatastrophe</span> Theft &amp;
+  Vandalism<o:p></o:p></span></p>
   </td>
   <td width=132 nowrap valign=bottom style='width:99.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:30.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>cova_il_nc_<b>tv</b><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>cova_il_nc_<b>tv</b></span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=138 valign=bottom style='width:103.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -3993,7 +4180,8 @@ model data</p>
   padding:0in 5.4pt 0in 5.4pt;height:30.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Theft, Theft From Unattended Auto, Vandalism Malicious Mischief<o:p></o:p></span></p>
+  color:black'>Theft, Theft <span class=GramE>From</span> Unattended Auto, Vandalism
+  Malicious Mischief<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:4;height:15.0pt'>
@@ -4003,15 +4191,18 @@ model data</p>
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Non- Catatastrophe Fire &amp; Lightning<o:p></o:p></span></p>
+  color:black'>Non- <span class=SpellE>Catatastrophe</span> Fire &amp;
+  Lightning<o:p></o:p></span></p>
   </td>
   <td width=132 nowrap valign=bottom style='width:99.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>cova_il_nc_<b>fl</b><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>cova_il_nc_<b>fl</b></span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=138 valign=bottom style='width:103.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4029,15 +4220,17 @@ model data</p>
   0in 5.4pt 0in 5.4pt;height:60.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Non- Catatastrophe All Other<o:p></o:p></span></p>
+  color:black'>Non- <span class=SpellE>Catatastrophe</span> All Other<o:p></o:p></span></p>
   </td>
   <td width=132 nowrap valign=bottom style='width:99.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:60.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>cova_il_nc_<b>ao</b><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>cova_il_nc_<b>ao</b></span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=138 valign=bottom style='width:103.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4048,8 +4241,8 @@ model data</p>
   color:black'>NOT in</span></b><span style='mso-ascii-font-family:Calibri;
   mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
   mso-bidi-font-family:Calibri;color:black'> (Flood, Water Backup, Water
-  Damage, Water Discharge, Hail, Windstorm, Theft, Theft From Unattended Auto, Vandalism
-  Malicious Mischief, Fire, Lightning, Smoke)<o:p></o:p></span></p>
+  Damage, Water Discharge, Hail, Windstorm, Theft, Theft <span class=GramE>From</span>
+  Unattended Auto, Vandalism Malicious Mischief, Fire, Lightning, Smoke)<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:6;height:15.0pt'>
@@ -4057,17 +4250,22 @@ model data</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Catatastrophe Fire &amp; Smoke (i.e., Wildfire)<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Catatastrophe</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'> Fire
+  &amp; Smoke (i.e., Wildfire)<o:p></o:p></span></p>
   </td>
   <td width=132 nowrap valign=bottom style='width:99.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>cova_il_<b>cat_fire</b><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>cova_il_<b>cat_fire</b></span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=138 nowrap valign=bottom style='width:103.5pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4083,17 +4281,22 @@ model data</p>
   border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
   solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Catatastrophe All Other<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>Catatastrophe</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'> All
+  Other<o:p></o:p></span></p>
   </td>
   <td width=132 nowrap valign=bottom style='width:99.0pt;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>cova_il_<b>cat_ao</b><o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>cova_il_<b>cat_ao</b></span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=138 valign=bottom style='width:103.5pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4110,8 +4313,8 @@ model data</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Table 5 Example of grouping claim losses for CovA in
-Property model data</p>
+<p class=MsoNormal>Table 5 Example of grouping claim losses for <span
+class=SpellE>CovA</span> in Property model data</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -4125,7 +4328,7 @@ just the matter of fact. People makes mistakes in the process of entering data
 or a program code populates wrong fields in a database. Even if an issue
 discovered later it`s too costly to fix historical data.</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'> </span></p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>There is also a question if it`s a data issue or feature. Does
 it happen only in a specific product or claim type? Maybe it`s expected and
@@ -4345,7 +4548,8 @@ structures:</p>
 style='mso-ascii-font-family:Calibri;mso-fareast-font-family:Calibri;
 mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri'><span
 style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Auto modeling data based on PersonalAuto line</p>
+</span></span></span><![endif]>Auto modeling data based on <span class=SpellE>PersonalAuto</span>
+line</p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in;mso-list:l5 level1 lfo10'><![if !supportLists]><span
 style='mso-ascii-font-family:Calibri;mso-fareast-font-family:Calibri;
@@ -4357,7 +4561,7 @@ Dwelling lines</p>
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>The datasets available to users are views based on fact
-tables and dimensions in DW. The views can be used “as is” or a new , more
+tables and dimensions in DW. The views can be used ``as is`` or a new , more
 specific for a project structure can be built based on fact and dimensional
 tables. An additional info, like demographic data or 3<sup>rd</sup> party
 vendors data can be easily joined if needed.</p>
@@ -4412,11 +4616,12 @@ alt="Insurance Property Model Data database diagram" v:shapes="Picture_x0020_1">
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Fact_Auto_Modeldata combines only vehicle and primary driver
-IDs. If it`s needed, the structure can be extended with primarily and
-occasional drivers related to the same vehicle_id in the fact table via
-DIM_RISK_EXTENSION. It should be done with caution because written and earned
-premium are only for risks based on primary drivers. </p>
+<p class=MsoNormal><span class=SpellE>Fact_Auto_Modeldata</span> combines only
+vehicle and primary driver IDs. If it`s needed, the structure can be extended
+with primarily and occasional drivers related to the same <span class=SpellE>vehicle_id</span>
+in the fact table via DIM_RISK_EXTENSION. It should be done with caution
+because written and earned premium are only for risks based on primary drivers.
+</p>
 
 <p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Picture_x0020_3" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:468pt;
@@ -4480,9 +4685,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>ProducerName<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>ProducerName</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4506,9 +4713,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>RoofCd<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>RoofCd</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4516,7 +4725,8 @@ better understand the structure.</p>
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Building attributes (yearbuilt, usage, construction)<o:p></o:p></span></p>
+  color:black'>Building attributes (<span class=SpellE>yearbuilt</span>, usage,
+  construction)<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:3;height:45.0pt'>
@@ -4532,9 +4742,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:45.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>AllCov_LossInc<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>AllCov_LossInc</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4559,9 +4771,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>AllCov_LossDCCE<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>AllCov_LossDCCE</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4585,9 +4799,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>AllCov_LossALAE<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>AllCov_LossALAE</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4611,17 +4827,22 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_il_nc_water<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_il_nc_water</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>CovA incurred losses (non-catastrophe) , water peril<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>CovA</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'> incurred
+  losses (non-catastrophe) , water peril<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:7;height:15.0pt'>
@@ -4637,9 +4858,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_il_nc_wh<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_il_nc_wh</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4663,9 +4886,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_il_nc_tv<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_il_nc_tv</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4689,9 +4914,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_il_nc_fl<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_il_nc_fl</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4715,9 +4942,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_il_nc_ao<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_il_nc_ao</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4741,9 +4970,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_il_cat_fire<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_il_cat_fire</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4767,9 +4998,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_il_cat_ao<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_il_cat_ao</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4793,9 +5026,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covB_il_...<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covB_il</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>_...<o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4819,9 +5054,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covC_il_...<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covC_il</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>_...<o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4845,9 +5082,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covD_il_...<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covD_il</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>_...<o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4871,9 +5110,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covE_il_...<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covE_il</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>_...<o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4897,9 +5138,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covF_il_...<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covF_il</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>_...<o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4923,9 +5166,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>liab_il_...<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>liab_il</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'>_...<o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -4951,15 +5196,17 @@ better understand the structure.</p>
   padding:0in 5.4pt 0in 5.4pt;height:15.75pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>..._dcce_nc_water<o:p></o:p></span></p>
+  color:black'>..._<span class=SpellE>dcce_nc_water</span><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.75pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>dcce<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>dcce</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:20;height:15.0pt'>
@@ -4977,7 +5224,7 @@ better understand the structure.</p>
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>..._alae_nc_water<o:p></o:p></span></p>
+  color:black'>..._<span class=SpellE>alae_nc_water</span><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5001,9 +5248,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_ic_nc_water<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_ic_nc_water</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5027,9 +5276,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covD_ic_cat_fire<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covD_ic_cat_fire</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5053,17 +5304,22 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>CovA_WP<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>CovA_WP</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>CovA - CovF mid-term change written premium<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>CovA</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'> - <span
+  class=SpellE>CovF</span> mid-term change written premium<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:24;height:15.0pt'>
@@ -5079,17 +5335,22 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>CovA_EP<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>CovA_EP</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>CovA - CovF mid-term change earned premium<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>CovA</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'> - <span
+  class=SpellE>CovF</span> mid-term change earned premium<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:25;height:15.0pt'>
@@ -5105,17 +5366,22 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_deductible<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_deductible</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>CovA - CovF deductible<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>CovA</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'> - <span
+  class=SpellE>CovF</span> deductible<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:26;height:15.0pt'>
@@ -5131,17 +5397,22 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>covA_limit<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>covA_limit</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>CovA - CovF limit<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>CovA</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'> - <span
+  class=SpellE>CovF</span> limit<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:27;height:15.0pt'>
@@ -5157,9 +5428,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>InsuranceScore<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>InsuranceScore</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5183,9 +5456,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>cal_year<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>cal_year</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5209,9 +5484,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:30.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>startdate<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>startdate</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5236,9 +5513,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:30.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>enddate<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>enddate</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5263,9 +5542,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>startdatetm<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>startdatetm</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5289,9 +5570,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>enddatetm<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>enddatetm</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5315,9 +5598,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:30.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>ecy<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>ecy</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5325,8 +5610,8 @@ better understand the structure.</p>
   padding:0in 5.4pt 0in 5.4pt;height:30.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Calendar Year Exposures: difference between StartDate and
-  EndDate divided by 365.25<o:p></o:p></span></p>
+  color:black'>Calendar Year Exposures: difference between StartDate and <span
+  class=SpellE>EndDate</span> divided by 365.25<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:34;height:15.0pt'>
@@ -5342,9 +5627,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>policynumber<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>policynumber</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5368,9 +5655,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>excludeddrvflg<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>excludeddrvflg</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5388,15 +5677,17 @@ better understand the structure.</p>
   0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Testing/ProofOfConcept<o:p></o:p></span></p>
+  color:black'>Testing/<span class=SpellE>ProofOfConcept</span><o:p></o:p></span></p>
   </td>
   <td width=216 nowrap valign=bottom style='width:2.25in;border-top:none;
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>HasCreditCardPaymentByInsured <o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>HasCreditCardPaymentByInsured</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'> <o:p></o:p></span></p>
   </td>
   <td width=270 valign=bottom style='width:202.35pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5460,9 +5751,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>ProducerCode<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>ProducerCode</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5497,7 +5790,8 @@ better understand the structure.</p>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
   color:black'>Claims capped counts and losses for a policy risk (vehicle and
-  driver) , coverage, mid-term change. AtFault or not flag<o:p></o:p></span></p>
+  driver) , coverage, mid-term change. <span class=SpellE>AtFault</span> or not
+  flag<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:3;height:30.0pt'>
@@ -5643,9 +5937,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>comp_deductible<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>comp_deductible</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 rowspan=3 valign=bottom style='width:163.0pt;border-top:none;
   border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5673,7 +5969,7 @@ better understand the structure.</p>
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>bi_limit1 (umbi,pd)<o:p></o:p></span></p>
+  color:black'>bi_limit1 (<span class=SpellE>umbi,pd</span>)<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:10;height:15.0pt'>
@@ -5691,7 +5987,7 @@ better understand the structure.</p>
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>bi_limit2 (umbi,pd)<o:p></o:p></span></p>
+  color:black'>bi_limit2 (<span class=SpellE>umbi,pd</span>)<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:11;height:30.0pt'>
@@ -5733,9 +6029,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>InsuranceScore<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>InsuranceScore</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5759,9 +6057,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:28.5pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>cal_year<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>cal_year</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5785,9 +6085,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:58.5pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>startdate<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>startdate</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5812,9 +6114,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:.75in'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>enddate<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>enddate</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5839,9 +6143,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:35.25pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>startdatetm<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>startdatetm</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5865,9 +6171,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:35.25pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>enddatetm<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>enddatetm</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5891,9 +6199,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:45.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>ecy<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>ecy</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5901,8 +6211,8 @@ better understand the structure.</p>
   padding:0in 5.4pt 0in 5.4pt;height:45.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Calendar Year Exposures: difference between StartDate and
-  EndDate divided by 365.25<o:p></o:p></span></p>
+  color:black'>Calendar Year Exposures: difference between StartDate and <span
+  class=SpellE>EndDate</span> divided by 365.25<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:19;height:15.0pt'>
@@ -5918,9 +6228,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>policynumber<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>policynumber</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5944,9 +6256,11 @@ better understand the structure.</p>
   border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
   mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
   padding:0in 5.4pt 0in 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
-  "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>excludeddrvflg<o:p></o:p></span></p>
+  <p class=MsoNormal><span class=SpellE><span style='mso-ascii-font-family:
+  Calibri;mso-fareast-font-family:"Times New Roman";mso-hansi-font-family:Calibri;
+  mso-bidi-font-family:Calibri;color:black'>excludeddrvflg</span></span><span
+  style='mso-ascii-font-family:Calibri;mso-fareast-font-family:"Times New Roman";
+  mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black'><o:p></o:p></span></p>
   </td>
   <td width=217 valign=bottom style='width:163.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -5980,7 +6294,8 @@ better understand the structure.</p>
   padding:0in 5.4pt 0in 5.4pt;height:30.0pt'>
   <p class=MsoNormal><span style='mso-ascii-font-family:Calibri;mso-fareast-font-family:
   "Times New Roman";mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;
-  color:black'>Vehicle attributes (year, model, annual distance, etc)<o:p></o:p></span></p>
+  color:black'>Vehicle attributes (year, model, annual distance, <span
+  class=SpellE>etc</span>)<o:p></o:p></span></p>
   </td>
  </tr>
 </table>
@@ -6128,8 +6443,7 @@ data for any segments that had limited historical experience?</p>
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>A data catalog tool comes in handy to manage modeling
-datasets, answer questions, document models. <span
-style='mso-spacerun:yes'> </span></p>
+datasets, answer questions, document models.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
