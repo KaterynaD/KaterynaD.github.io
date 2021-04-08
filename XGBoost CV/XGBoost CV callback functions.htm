@@ -16,16 +16,16 @@ href="XGBoost%20CV%20callback%20functions_files/filelist.xml">
   <o:Author>Kateryna Drogaieva</o:Author>
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Kateryna Drogaieva</o:LastAuthor>
-  <o:Revision>2</o:Revision>
-  <o:TotalTime>38026</o:TotalTime>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>38036</o:TotalTime>
   <o:Created>2021-04-08T15:46:00Z</o:Created>
-  <o:LastSaved>2021-04-08T15:46:00Z</o:LastSaved>
+  <o:LastSaved>2021-04-08T15:56:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>1652</o:Words>
-  <o:Characters>9420</o:Characters>
-  <o:Lines>78</o:Lines>
-  <o:Paragraphs>22</o:Paragraphs>
-  <o:CharactersWithSpaces>11050</o:CharactersWithSpaces>
+  <o:Words>1630</o:Words>
+  <o:Characters>9296</o:Characters>
+  <o:Lines>77</o:Lines>
+  <o:Paragraphs>21</o:Paragraphs>
+  <o:CharactersWithSpaces>10905</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -1144,6 +1144,12 @@ span.cm-property
 span.cm-number
 	{mso-style-name:cm-number;
 	mso-style-unhide:no;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -1582,6 +1588,27 @@ ul
 	mso-hansi-theme-font:minor-latin;
 	mso-bidi-font-family:"Times New Roman";
 	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 </style>
 <![endif]--><!--[if gte mso 9]><xml>
  <o:shapedefaults v:ext="edit" spidmax="1026"/>
@@ -1624,71 +1651,231 @@ yourself. </p>
 
 <p class=MsoNormal>cv_results = xgb.cv(</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>params,</p>
+<p class=MsoNormal>params,</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>dtrain,</p>
+<p class=MsoNormal>dtrain,</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>   
-</span>num_boost_round=num_boost_round,</p>
+<p class=MsoNormal><span class=SpellE>num_boost_round</span>=<span
+class=SpellE>num_boost_round</span>,</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>seed=42,</p>
+<p class=MsoNormal>seed=42,</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>nfold=5,</p>
+<p class=MsoNormal><span class=SpellE>nfold</span>=5,</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>   
-</span>early_stopping_rounds=100</p>
+<p class=MsoNormal>early_stopping_rounds=100</p>
 
 <p class=MsoNormal>)</p>
 
 <p class=MsoNormal>cv_results</p>
 
-<p class=MsoNormal><span style='mso-tab-count:1'>                </span>train-auc-mean<span
-style='mso-tab-count:1'> </span>train-auc-std<span style='mso-tab-count:1'>      </span>test-auc-mean<span
-style='mso-tab-count:1'>  </span>test-auc-std</p>
-
-<p class=MsoNormal>0<span style='mso-tab-count:1'>              </span>0.500000<span
-style='mso-tab-count:1'>              </span>0.000000<span style='mso-tab-count:
-1'>              </span>0.500000<span style='mso-tab-count:1'>              </span>0.000000</p>
-
-<p class=MsoNormal>1<span style='mso-tab-count:1'>              </span>0.500000<span
-style='mso-tab-count:1'>              </span>0.000000<span style='mso-tab-count:
-1'>              </span>0.500000<span style='mso-tab-count:1'>              </span>0.000000</p>
-
-<p class=MsoNormal>2<span style='mso-tab-count:1'>              </span>0.500000<span
-style='mso-tab-count:1'>              </span>0.000000<span style='mso-tab-count:
-1'>              </span>0.500000<span style='mso-tab-count:1'>              </span>0.000000</p>
-
-<p class=MsoNormal>3<span style='mso-tab-count:1'>              </span>0.500000<span
-style='mso-tab-count:1'>              </span>0.000000<span style='mso-tab-count:
-1'>              </span>0.500000<span style='mso-tab-count:1'>              </span>0.000000</p>
-
-<p class=MsoNormal>4<span style='mso-tab-count:1'>              </span>0.500000<span
-style='mso-tab-count:1'>              </span>0.000000<span style='mso-tab-count:
-1'>              </span>0.500000<span style='mso-tab-count:1'>              </span>0.000000</p>
-
-<p class=MsoNormal>...<span style='mso-tab-count:1'>            </span>...<span
-style='mso-tab-count:1'>            </span>...<span style='mso-tab-count:1'>            </span>...<span
-style='mso-tab-count:1'>            </span>...</p>
-
-<p class=MsoNormal>691<span style='mso-tab-count:1'>         </span>0.729942<span
-style='mso-tab-count:1'>              </span>0.001573<span style='mso-tab-count:
-1'>              </span>0.687806<span style='mso-tab-count:1'>              </span>0.015197</p>
-
-<p class=MsoNormal>692<span style='mso-tab-count:1'>         </span>0.729998<span
-style='mso-tab-count:1'>              </span>0.001572<span style='mso-tab-count:
-1'>              </span>0.687810<span style='mso-tab-count:1'>              </span>0.015194</p>
-
-<p class=MsoNormal>693<span style='mso-tab-count:1'>         </span>0.730056<span
-style='mso-tab-count:1'>              </span>0.001574<span style='mso-tab-count:
-1'>              </span>0.687823<span style='mso-tab-count:1'>              </span>0.015194</p>
-
-<p class=MsoNormal>694<span style='mso-tab-count:1'>         </span>0.730084<span
-style='mso-tab-count:1'>              </span>0.001564<span style='mso-tab-count:
-1'>              </span>0.687826<span style='mso-tab-count:1'>              </span>0.015202</p>
-
-<p class=MsoNormal>695<span style='mso-tab-count:1'>         </span>0.730137<span
-style='mso-tab-count:1'>              </span>0.001560<span style='mso-tab-count:
-1'>              </span>0.687837<span style='mso-tab-count:1'>              </span>0.015183</p>
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt;mso-border-insideh:none;mso-border-insidev:none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc-mean</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc-std</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc-mean</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc-std</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>1</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>2</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>3</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>4</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.500000</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.000000</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>...</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>...</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>...</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>...</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>...</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>691</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.729942</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.001573</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.687806</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.015197</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>692</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.729998</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.001572</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.687810</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.015194</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>693</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.730056</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.001574</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.687823</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.015194</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>694</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.730084</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.001564</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.687826</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.015202</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11;mso-yfti-lastrow:yes'>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>695</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.730137</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.001560</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.687837</p>
+  </td>
+  <td width=125 valign=top style='width:93.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>0.015183</p>
+  </td>
+ </tr>
+</table>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -1702,38 +1889,25 @@ iteration.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in;mso-list:l2 level1 lfo5'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>We do not have separate results from each model
-trained/validated on a specific fold. There is just mean and std. We may need
-it if we want to analyze the result using t-test or use models outputs in a
-pipeline/model stacking.</p>
+<p class=MsoNormal style='margin-left:.25in'>- We do not have separate results
+from each model trained/validated on a specific fold. There is just mean and
+std. We may need it if we want to analyze the result using t-test or use <span
+class=GramE>models</span> outputs in a pipeline/model stacking.</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l2 level1 lfo5'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>The output of CV may provide wrong std. I
-observed wrong AUC std output in several XGBoost versions. It looks like they
-calculate mean first and then include mean to calculate std.</p>
+<p class=MsoNormal style='margin-left:.25in'>- The output of CV may provide
+wrong std. I observed wrong AUC std output in several XGBoost versions. It
+looks like they calculate mean first and then include mean to calculate std.</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l2 level1 lfo5'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>We may need sem instead of or along with std.</p>
+<p class=MsoNormal style='margin-left:.25in'>- We may need sem instead of or
+along with std.</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in;mso-list:l2 level1 lfo5'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>We do not have best models at the end of the
-process and need to train them again based on the selected best parameters.</p>
+<p class=MsoNormal style='margin-left:.25in'>- We do not have best models at
+the end of the process and need to train them again based on the selected best
+parameters.</p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in;mso-list:l2 level1 lfo5'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>There is no ongoing output from the function,
-and it might take a while. In some cases, the output is required for outside
-monitoring systems.</p>
+<p class=MsoNormal style='margin-left:.25in'>- There is no ongoing output from
+the function, and it might take a while. In some cases, the output is required
+for outside monitoring systems.</p>
 
 <p class=MsoNormal>In this article I will show few tricks how to make CV more
 usable.</p>
@@ -1743,9 +1917,8 @@ usable.</p>
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>Callback functions were designed to implement extensions of
-CV function.<span style='mso-spacerun:yes'>  </span>They are invoked inside an internal
-loop. There are several built-in callbacks, and you can design your own
-functions.</p>
+CV function. They are invoked inside an internal loop. There are several
+built-in callbacks, and you can design your own functions.</p>
 
 <p class=MsoNormal>xgb.callback.print_evaluation(period=n<span
 style='font-size:9.0pt;line-height:107%;font-family:Consolas;color:#24292E;
@@ -1772,16 +1945,16 @@ below I extract best models and train/test scores from each model at each step.
 
 <p class=MsoNormal>A best model can be a model with a score greater then at
 previous step like AUC or smaller like MAE or RMSE. That is why I have one more
-Boolean parameter in my function – maximize. Base on this parameter I will
+Boolean parameter in my function - maximize. Base on this parameter I will
 choose best score and model.</p>
 
-<p class=MsoNormal>def cv_misc_callback(oof_train_scores:list,
-oof_valid_scores:list, best_models:list,<span style='mso-spacerun:yes'> 
-</span>maximize=True):</p>
+<p class=MsoNormal>def cv_misc_<span class=GramE>callback(</span><span
+class=SpellE>oof_train_scores:list</span>, <span class=SpellE>oof_valid_scores:list</span>,
+<span class=SpellE>best_models:list</span>, maximize=True):</p>
 
 <p class=MsoNormal>The function body is very short:</p>
 
-<p class=MsoNormal>It starts from an instruction when to run it – before or
+<p class=MsoNormal>It starts from an instruction when to run it - before or
 after iteration:</p>
 
 <p class=MsoNormal>callback.before_iteration = False</p>
@@ -1810,8 +1983,8 @@ available in the callback functions. It has a complex structure:</p>
 <p class=MsoNormal>cvfolds=[&lt;xgboost.training.CVPack object at
 0x7f29bfb65610&gt;, </p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        
-</span>&lt;xgboost.training.CVPack object at 0x7f29bfb65040&gt;, </p>
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span>&lt;<span
+class=GramE>xgboost.training</span>.CVPack object at 0x7f29bfb65040&gt;, </p>
 
 <p class=MsoNormal><span style='mso-tab-count:2'>                                </span><span
 style='mso-spacerun:yes'> </span>&lt;xgboost.training.CVPack object at
@@ -1870,81 +2043,192 @@ testing scores. </p>
 <p class=MsoNormal>There is a special parameter in CV function which accepts a
 list of callback functions (standard or custom):</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>cv_results=xgb.cv(params,
-</p>
+<p class=MsoNormal><span class=GramE>cv_results=xgb.cv(</span>params, </p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>d_train, </p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>d_train, </p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span style='mso-spacerun:yes'> 
 </span>num_boost_round=num_boost_round,</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>nfold=nfold, </p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>nfold=nfold, </p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>stratified=True, </p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>stratified=True, </p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>shuffle=True,</p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>shuffle=True,</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span style='mso-spacerun:yes'> 
 </span>early_stopping_rounds=early_stopping_rounds, </p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>seed=42,</p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>seed=42,</p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                  
-</span>callbacks=[cv_misc_callback(oof_train_scores,
+<p class=MsoNormal><span style='mso-spacerun:yes'>   </span>callbacks<span
+class=GramE>=[</span>cv_misc_callback(oof_train_scores,
 oof_valid_scores,best_models,True), xgb.callback.print_evaluation(period=10)] </p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     </span>)</p>
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span>)</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>….</p>
 
-<p class=MsoNormal>[660]<span style='mso-tab-count:1'>      </span>train-auc:0.72809+0.00157<span
-style='mso-tab-count:1'>           </span>test-auc:0.68774+0.01521<o:p></o:p></p>
-
-<p class=MsoNormal>[670]<span style='mso-tab-count:1'>      </span>train-auc:0.72862+0.00158<span
-style='mso-tab-count:1'>           </span>test-auc:0.68776+0.01517<o:p></o:p></p>
-
-<p class=MsoNormal>[680]<span style='mso-tab-count:1'>      </span>train-auc:0.72917+0.00164<span
-style='mso-tab-count:1'>           </span>test-auc:0.68776+0.01515<o:p></o:p></p>
-
-<p class=MsoNormal>[690]<span style='mso-tab-count:1'>      </span>train-auc:0.72989+0.00158<span
-style='mso-tab-count:1'>           </span>test-auc:0.68781+0.01518<o:p></o:p></p>
-
-<p class=MsoNormal>[700]<span style='mso-tab-count:1'>      </span>train-auc:0.73049+0.00150<span
-style='mso-tab-count:1'>           </span>test-auc:0.68774+0.01520<o:p></o:p></p>
-
-<p class=MsoNormal>[710]<span style='mso-tab-count:1'>      </span>train-auc:0.73104+0.00145<span
-style='mso-tab-count:1'>           </span>test-auc:0.68776+0.01520<o:p></o:p></p>
-
-<p class=MsoNormal>[720]<span style='mso-tab-count:1'>      </span>train-auc:0.73165+0.00139<span
-style='mso-tab-count:1'>           </span>test-auc:0.68776+0.01530<o:p></o:p></p>
-
-<p class=MsoNormal>[730]<span style='mso-tab-count:1'>      </span>train-auc:0.73226+0.00138<span
-style='mso-tab-count:1'>           </span>test-auc:0.68776+0.01523<o:p></o:p></p>
-
-<p class=MsoNormal>[740]<span style='mso-tab-count:1'>      </span>train-auc:0.73283+0.00140<span
-style='mso-tab-count:1'>           </span>test-auc:0.68762+0.01517<o:p></o:p></p>
-
-<p class=MsoNormal>[750]<span style='mso-tab-count:1'>      </span>train-auc:0.73344+0.00132<span
-style='mso-tab-count:1'>           </span>test-auc:0.68763+0.01524<o:p></o:p></p>
-
-<p class=MsoNormal>[760]<span style='mso-tab-count:1'>      </span>train-auc:0.73400+0.00130<span
-style='mso-tab-count:1'>           </span>test-auc:0.68754+0.01519<o:p></o:p></p>
-
-<p class=MsoNormal>[770]<span style='mso-tab-count:1'>      </span>train-auc:0.73462+0.00133<span
-style='mso-tab-count:1'>           </span>test-auc:0.68760+0.01510<o:p></o:p></p>
-
-<p class=MsoNormal>[780]<span style='mso-tab-count:1'>      </span>train-auc:0.73520+0.00131<span
-style='mso-tab-count:1'>           </span>test-auc:0.68762+0.01522<o:p></o:p></p>
-
-<p class=MsoNormal>[790]<span style='mso-tab-count:1'>      </span>train-auc:0.73584+0.00133<span
-style='mso-tab-count:1'>           </span>test-auc:0.68755+0.01530<o:p></o:p></p>
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 5.4pt 0in 5.4pt;mso-border-insideh:none;mso-border-insidev:none'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[660]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.72809+0.00157</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68774+0.01521</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[670]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.72862+0.00158</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68776+0.01517</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[680]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.72917+0.00164</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68776+0.01515</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[690]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.72989+0.00158</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68781+0.01518</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[700]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73049+0.00150</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68774+0.01520</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[710]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73104+0.00145</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68776+0.01520</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[720]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73165+0.00139</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68776+0.01530</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[730]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73226+0.00138</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68776+0.01523</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[740]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73283+0.00140</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68762+0.01517</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[750]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73344+0.00132</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68763+0.01524</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[760]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73400+0.00130</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68754+0.01519</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[770]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73462+0.00133</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68760+0.01510</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[780]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73520+0.00131</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68762+0.01522</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13;mso-yfti-lastrow:yes'>
+  <td width=208 valign=top style='width:155.8pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>[790]</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>train-auc:0.73584+0.00133</p>
+  </td>
+  <td width=208 valign=top style='width:155.85pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>test-auc:0.68755+0.01530</p>
+  </td>
+ </tr>
+</table>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -3575,7 +3859,7 @@ is no way to implement cross-validation for each separate model training. OpenSo
 XGBoost allows to use a custom script for training where CV function can be
 used. However, AWS SageMaker monitoring system needs an output aka logs but
 even standard callback function does not provide an output suitable for AWS
-monitoring. The monitoring system expects “valid” not “test” in the output.
+monitoring. The monitoring system expects ``valid`` not ``test`` in the output.
 Custom callback function can output log in acceptable format. Just add properly
 formatted print function inside a custom callback function and do not use a
 standard one.</p>
