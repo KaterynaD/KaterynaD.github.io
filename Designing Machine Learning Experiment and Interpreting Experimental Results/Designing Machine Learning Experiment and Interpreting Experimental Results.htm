@@ -4719,11 +4719,11 @@ class=SpellE><span class=GramE>scipy.stats</span></span> package.</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>if <span
   class=SpellE><span class=GramE>t.pvalue</span></span>&gt;=alpha:</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span><span class=GramE>print(</span>'No
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=GramE>print(</span>'No
   difference between the models with %s significance <span class=SpellE>level'%alpha</span>)</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>else:</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span><span class=GramE>print(</span>'There is a
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=GramE>print(</span>'There is a
   difference between models with %s significance <span class=SpellE>level'%alpha</span>)</p>
   </td>
  </tr>
@@ -4863,52 +4863,52 @@ validation.</p>
   class=GramE>(</span>data1, data2, <span class=SpellE>n_training_size_folds</span>,
   <span class=SpellE>n_test_size_folds</span>, alpha):</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>#corrected paired t-test</p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>#corrected paired t-test</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>diff<span class=GramE>=[</span>y - x for y,
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>diff<span class=GramE>=[</span>y - x for y,
   x in zip(data1, data2)]</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>n = <span class=SpellE>len</span>(diff)</p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>n = <span class=SpellE>len</span>(diff)</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>m = <span class=SpellE><span class=GramE>np.mean</span></span>(diff)</p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>m = <span class=SpellE><span class=GramE>np.mean</span></span>(diff)</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>#<span class=GramE>it's</span> important to
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>#<span class=GramE>it's</span> important to
   provide <span class=SpellE>ddof</span>=1 (delta degrees of freedom) in <span
   class=SpellE>numpy</span> var to calculate variance with <span class=SpellE>degre</span>
   of freedom n - 1.</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>v = <span class=SpellE>np.var</span>(<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>v = <span class=SpellE>np.var</span>(<span
   class=SpellE><span class=GramE>diff,ddof</span></span>=1)</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>t = <span class=GramE>m/<span class=SpellE>math.sqrt</span>(</span>v*(1/n
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>t = <span class=GramE>m/<span class=SpellE>math.sqrt</span>(</span>v*(1/n
   + n2/n1))</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span></p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>#degree of freedom</p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>#degree of freedom</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>df = n - 1</p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>df = n - 1</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span></p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>#Critical value for Two-tailed test from t
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>#Critical value for Two-tailed test from t
   distribution table:</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span><span class=SpellE>critical_value</span>=<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=SpellE>critical_value</span>=<span
   class=SpellE><span class=GramE>stats.t.ppf</span></span><span class=GramE>(</span>q=1-
   alpha/2, df=df)</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span></p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>#p-value - probability of getting a more
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>#p-value - probability of getting a more
   extreme value - for two-sided test</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span><span class=SpellE>pvalue</span> = 2*(<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=SpellE>pvalue</span> = 2*(<span
   class=GramE>1-stats.t.cdf(</span>t, df))</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span></p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span>return t, <span class=SpellE>critical_value</span>,
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>return t, <span class=SpellE>critical_value</span>,
   <span class=SpellE>pvalue</span></p>
   </td>
  </tr>
@@ -4944,11 +4944,11 @@ validation.</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>if <span
   class=SpellE>pvalue</span>&gt;= alpha:</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span><span class=GramE>print(</span>'No
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=GramE>print(</span>'No
   difference between the models with %s significance level'% alpha)</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>else:</p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='mso-spacerun:yes'> </span><span class=GramE>print(</span>'There is a
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=GramE>print(</span>'There is a
   difference between models with %s significance level'% alpha)</p>
   </td>
  </tr>
@@ -5883,13 +5883,13 @@ mso-fareast-theme-font:minor-fareast'><o:p>&nbsp;</o:p></span></p>
   <span class=GramE>CI[</span>0]&lt;=0:<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span><span class=GramE>print(</span>'No
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=GramE>print(</span>'No
   difference between the models with %s confidence level'%(1-alpha))<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'>else:<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span><span class=GramE>print(</span>'There is a
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=GramE>print(</span>'There is a
   difference between models with %s confidence level'%(1-alpha))<o:p></o:p></span></p>
   </td>
  </tr>
@@ -5931,38 +5931,38 @@ mso-fareast-theme-font:minor-fareast'><o:p>&nbsp;</o:p></span></p>
   class=GramE>(</span>data1, data2, n1, n2, confidence=0.95):<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span>diff<span class=GramE>=[</span>y - x for y,
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>diff<span class=GramE>=[</span>y - x for y,
   x in zip(data1, data2)]<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span>n = <span class=SpellE>len</span>(diff)<o:p></o:p></span></p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>n = <span class=SpellE>len</span>(diff)<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span>m = <span class=SpellE><span class=GramE>np.mean</span></span>(diff)<o:p></o:p></span></p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>m = <span class=SpellE><span class=GramE>np.mean</span></span>(diff)<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span>v = <span class=SpellE><span class=GramE>np.var</span></span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>v = <span class=SpellE><span class=GramE>np.var</span></span><span
   class=GramE>(</span>diff, <span class=SpellE>ddof</span>=1) <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span>df = n - 1 <o:p></o:p></span></p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>df = n - 1 <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span>t = <span class=SpellE><span class=GramE>stats.t.ppf</span></span><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>t = <span class=SpellE><span class=GramE>stats.t.ppf</span></span><span
   class=GramE>(</span>(1 + confidence)/2, df) <o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span>lower = m - t * <span class=SpellE><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>lower = m - t * <span class=SpellE><span
   class=GramE>math.sqrt</span></span>(v*(1/n + n2/n1))<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span>upper = m + t * <span class=SpellE><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>upper = m + t * <span class=SpellE><span
   class=GramE>math.sqrt</span></span>(v*(1/n + n2/n1))<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span>return lower, <span class=GramE>upper</span><o:p></o:p></span></p>
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>return lower, <span class=GramE>upper</span><o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><o:p>&nbsp;</o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
@@ -5980,13 +5980,13 @@ mso-fareast-theme-font:minor-fareast'><o:p>&nbsp;</o:p></span></p>
   class=GramE>[</span>0]&lt;=0:<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span><span class=GramE>print(</span>'No
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=GramE>print(</span>'No
   difference between the models with %s confidence level'%(1-alpha))<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'>else:<o:p></o:p></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast'><span
-  style='mso-spacerun:yes'> </span><span class=GramE>print(</span>'There is a difference
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class=GramE>print(</span>'There is a difference
   between models with %s confidence level'%(1-alpha))<o:p></o:p></span></p>
   </td>
  </tr>
@@ -6378,7 +6378,7 @@ predictions. It also helps to detect anomalies or outliers.</p>
     style='mso-bidi-font-style:normal'><span style='font-family:"Cambria Math",serif'><m:r>y</m:r><m:r>
      </m:r></span></i></m:e></m:acc><i style='mso-bidi-font-style:normal'><span
   style='font-family:"Cambria Math",serif'><m:r><span
-   style='mso-spacerun:yes'> </span>± </m:r></span></i><m:sSub><m:sSubPr><span
+   style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span>± </m:r></span></i><m:sSub><m:sSubPr><span
     style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
     mso-hansi-font-family:"Cambria Math";font-style:italic;mso-bidi-font-style:
     normal'><m:ctrlPr></m:ctrlPr></span></m:sSubPr><m:e><i style='mso-bidi-font-style:
