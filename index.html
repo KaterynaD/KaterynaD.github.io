@@ -690,11 +690,97 @@
         <h3>GTM &amp; Marketing — Win Rate and Deal Size</h3>
       </div>
 
-      <div style="width: min(96%, 1800px); margin: 0 auto 64px; overflow-x: auto;">
 
-        <div class='tableauPlaceholder' id='viz1792871036153' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GT&#47;GTMandMarketing&#47;WinRateandDealSize&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GTMandMarketing&#47;WinRateandDealSize' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GT&#47;GTMandMarketing&#47;WinRateandDealSize&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1792871036153');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1709px';vizElement.style.height='1050px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1709px';vizElement.style.height='1050px';} else { vizElement.style.minWidth='1709px';vizElement.style.maxWidth='100%';vizElement.style.height='3700px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-      </div>
+<!-- Custom Tableau Filter -->
+<div class="tableau-controls" style="margin: 20px 0;">
+  <label for="motionFilter"
+         style="font-weight: 600; margin-right: 12px;">
+    Sales Motion:
+  </label>
+<p style="font-size: 13px; color: #777; margin-top: 8px;">
+  <strong>Interactive Tableau Integration:</strong>
+  Custom HTML/JavaScript filter powered by Tableau
+  Embedding API v3. Updates the dashboard dynamically
+  without reloading the page.
+</p>
+  <select id="motionFilter"
+          disabled
+          style="padding: 10px; border-radius: 6px;
+                 min-width: 180px;">
+    <option value="">All Motions</option>
+    <option value="New Business">New Business</option>
+    <option value="Renewal">Renewal</option>
+    <option value="Upsell">Upsell</option>
+  </select>
+</div>
+
+
+<!-- Tableau Public Dashboard -->
+<tableau-viz
+  id="marketingViz"
+  src="https://public.tableau.com/views/GTMandMarketing/WinRateandDealSize"
+  toolbar="bottom"
+  hide-tabs
+  width="100%"
+  height="700px">
+</tableau-viz>
+
+<script type="module">
+  import {
+    FilterUpdateType,
+    TableauEventType
+  } from "https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js";
+
+  const viz = document.getElementById("marketingViz");
+  const filter = document.getElementById("motionFilter");
+
+  // Wait until Tableau is interactive
+  viz.addEventListener(
+    TableauEventType.FirstInteractive,
+    () => {
+      filter.disabled = false;
+      console.log("Tableau dashboard ready");
+    }
+  );
+
+  // Handle dropdown changes
+  filter.addEventListener("change", async () => {
+    filter.disabled = true;
+
+    try {
+      const dashboard = viz.workbook.activeSheet;
+
+      if (filter.value === "") {
+        // Show all Motions
+        await dashboard.applyFilterAsync(
+          "Motion",
+          [],
+          FilterUpdateType.All
+        );
+      } else {
+        // Filter by selected Motion
+        await dashboard.applyFilterAsync(
+          "Motion",
+          [filter.value],
+          FilterUpdateType.Replace
+        );
+      }
+    } catch (error) {
+      console.error("Motion filter failed:", error);
+    } finally {
+      filter.disabled = false;
+    }
+  });
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
       <div class="wrap">
         <h3>Insurance Products Performance</h3>
